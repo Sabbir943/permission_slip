@@ -61,6 +61,7 @@ html
 📁 Project Structure
 text
 ```bash
+```bash
 ** sliphub-app/
 ├── server.js                 # Backend server and API routes
 ├── package.json              # Project dependencies and scripts
