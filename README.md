@@ -69,24 +69,27 @@ text
     ├── index.html            # Main HTML document
     ├── style.css             # Application styles
     └── script.js             # Client-side JavaScript ***
-<br/>
-<p>🎯 Running the Application
+```bash
+```bash
+🎯 Running the Application
 Starting the Backend Server
-Open command prompt/terminal in your project directory</p>
+Open command prompt/terminal in your project directory
 
 Execute the server script:
-
+```bash
 ```bash
 node server.js
 Successful startup will display: "Server running at http://localhost:3000"
-
+```bash
+```bash
 Accessing the Application
 Open your preferred web browser
 
 Visit: http://localhost:3000
 
 The SlipHub application interface will load
-
+```bash
+```bash
 🧪 Application Testing
 First-Time Setup Verification
 Register a new student account using the student registration form
@@ -94,6 +97,8 @@ Register a new student account using the student registration form
 Register a new teacher account using the secret code: "nub"
 
 Login with both accounts to verify authentication works correctly
+```bash
+```bash
 
 Functional Testing
 Student Perspective:
@@ -105,7 +110,8 @@ Submit a new permission slip application
 Check the status of submitted slips
 
 Download an approved permission slip as PDF
-
+```bash
+```bash
 Teacher Perspective:
 
 Log in as a teacher
@@ -115,11 +121,13 @@ View the list of pending permission slips
 Approve or reject submission requests
 
 Verify status updates reflect immediately
-
+```bash
+```bash
 ⚠️ Troubleshooting Common Issues
 Port Already in Use Error
 Solution: Change the port in server.js (e.g., to 3001, 8080, etc.) and update the API_BASE URL in script.js accordingly
-
+```bash
+```bash
 Database Connection Problems
 Verification Steps:
 
@@ -128,3 +136,4 @@ Ensure MySQL is running in XAMPP Control Panel
 Confirm database credentials in server.js match your MySQL setup
 
 Verify the database named permission_slip exists
+```bash
