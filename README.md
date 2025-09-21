@@ -45,58 +45,52 @@ Before running the SlipHub application, ensure you have the following components
    npm init -y
    npm install express mysql2 bcryptjs jsonwebtoken cors body-parser
 
-  ### Step 3: Set Up the Frontend
-   Create a folder named public in your project directory
-   Save these provided files inside the public folder:
-   <b>1.index.html - Main application interface and markup
-   2.style.css - All styling rules for the application
-   3.script.js - Client-side functionality and API interactions<b/></br>
+Step 3: Set Up the Frontend
 
- ### Step 4: Install Frontend Dependencies
- Include the jsPDF library by adding this script tag inside the <head> section of your index.html:
+Create a folder named public (if not already present).
+Save these provided files inside the public folder:
 
-html
-```bash
+index.html → Main application interface and markup
+
+style.css → Application styling
+
+script.js → Client-side functionality and API interactions
+
+Step 4: Install Frontend Dependencies
+
+Add the jsPDF library to your index.html inside the <head> section:
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-📁 Project Structure
-text
 
-** sliphub-app/
-├── server.js                 # Backend server and API routes
-├── package.json              # Project dependencies and scripts
-├── package-lock.json         # Exact dependency versions
-└── public/                   # Frontend assets
-    ├── index.html            # Main HTML document
-    ├── style.css             # Application styles
-    └── script.js             # Client-side JavaScript ***
+🚀 Running the Application
+Start the Backend Server
 
-🎯 Running the Application
-Starting the Backend Server
-Open command prompt/terminal in your project directory
-
-Execute the server script:
+Open terminal in the project directory and run:
 
 node server.js
-Successful startup will display: "Server running at http://localhost:3000"
 
-### Accessing the Application
-Open your preferred web browser
 
-Visit: http://localhost:3000
+Successful startup will display:
 
-The SlipHub application interface will load
-h
+Server running at http://localhost:3000
+
+Access the Application
+
+Open a browser and go to:
+👉 http://localhost:3000
+
 🧪 Application Testing
 First-Time Setup Verification
-Register a new student account using the student registration form
 
-### Register a new teacher account using the secret code: "nub":
+Register a new student account using the student registration form.
 
-Login with both accounts to verify authentication works correctly
+Register a new teacher account using the secret code: nub.
 
+Log in with both accounts to verify authentication.
 
 Functional Testing
-### Student Perspective:
+
+Student Perspective
 
 Log in as a student
 
@@ -106,24 +100,53 @@ Check the status of submitted slips
 
 Download an approved permission slip as PDF
 
-### Teacher Perspective:
+Teacher Perspective
 
 Log in as a teacher
 
 View the list of pending permission slips
 
-Approve or reject submission requests
+Approve or reject requests
 
 Verify status updates reflect immediately
 
-### ⚠️ Troubleshooting Common Issues
-Port Already in Use Error
-Solution: Change the port in server.js (e.g., to 3001, 8080, etc.) and update the API_BASE URL in script.js accordingly
+⚠️ Troubleshooting
+Port Already in Use
+
+Change the port in server.js (e.g., 3001 or 8080)
+
+Update API_BASE URL in script.js accordingly
 
 Database Connection Problems
-### Verification Steps:
 
 Ensure MySQL is running in XAMPP Control Panel
+
+Confirm database credentials in server.js match your MySQL setup
+
+Verify a database named permission_slip exists
+
+📌 Technologies Used
+
+Node.js – Backend server
+
+Express.js – API routes
+
+MySQL – Database
+
+HTML, CSS, JavaScript – Frontend
+
+jsPDF – PDF generation
+
+👨‍💻 Author
+
+Developed as part of Software Development II (Database Programming) project.
+
+
+---
+
+Do you want me to also include the **SQL schema** (table creation script) in the README so new users can set up the database quickly?
+
+You said:
 
 Confirm database credentials in server.js match your MySQL setup
 
